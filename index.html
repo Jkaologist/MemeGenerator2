@@ -3,16 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- CSS Styling-->
+<!-- Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+<!-- CSS Styling-->
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>Meme Generator</title>
+<!-- Font Awesome-->
+    <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js"></script>
 </head>
 <body>
-    <!-- Build a title -->
-    <div id="pageTitle">
-        <h1>The Dank-o-Meme 5000</h1>
+<!-- Build a title bar and background for the entry form -->
+    <div class="background-blue">
+        <header class="container-fluid">
+            <div class="container mx-auto text-center mb-5 title">
+                <h1 class="text-info">The Dank-o-Meme 5000</h1>
+                <h2>The meme builder that leaves your friends in stitches</h2>
+            </div>
+            <div class="steps">
+                <p></p>
+            </div>
+        </header>
+
+        <section class="container">
+            <form id="meme-form">
+    <!-- Image section of form -->
+                <div class="group-form row mb-5">
+                    <label for="link-to-pic" class="col-md-2 col-form-label">Image URL:</label>
+                    <div class="col-md-10">
+                        <input type="url" class="form-control" id="uploaded-img" placeholder="Your URL" required>
+                    </div>
+                </div>
+    <!-- upper text section of form -->
+                <div class="group-form row mb-5">
+                    <label for="text-on-top" class="col-md-2 col-form-label">Upper Meme Text:</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="text-top" placeholder="Your upper meme text (optional)">
+                    </div>
+                </div>
+    <!-- lower text section of form -->
+                <div class="group-form row mb-5">
+                    <label for="text-on-top" class="col-md-2 col-form-label">Upper Meme Text:</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="text-bottom" placeholder="Your lower meme text (optional)">
+                    </div>
+                </div>
+    <!-- Make a button for submitting the form -->
+                <div class="group-form row mb-5">
+                    <label class="col-md-2 col-form-label"></label>
+                    <div class="col-md-2">
+                        <input type="submit" class="btn btn-success" value="Generate Meme!">
+                    </div>
+                </div>
+                
+            </form>
+        </section>
     </div>
-    <!-- Attach Javascript -->
+<!-- Attach Javascript -->
     <script src="memeGen.js"></script>
 </body>
 </html>
