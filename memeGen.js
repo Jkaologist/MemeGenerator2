@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", function() {
         bottomTextDiv.innerText = document.getElementById("text-bottom").value;
 // Create a div for the red delete icon
         let removeDiv = document.createElement('div');
-        removeDiv.classList.add("red-cross");
-        removeDiv.innerText = "X";
+        removeDiv.classList.add("deleteBtn");
+        removeDiv.innerText = "Delete";
         removeDiv.style.color = "red";
 
 // Create the memes with the delete button!

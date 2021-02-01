@@ -1,1 +1,88 @@
-/* Title Styling */
+/* Title and background styling */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 300%;
+}
+
+h2 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.background {
+    background-color: lightgoldenrodyellow;
+    padding: 1%
+}
+
+.meme-gallery {
+    background-color: lightgoldenrodyellow;
+    padding: 1%;
+}
+
+.title {
+    width: 900px;
+    color: green;
+}
+
+/* Meme styles */
+.meme-img {
+    display: inline-block;
+    margin: 1%;
+    height: auto;
+    text-align: center;
+    position: relative;
+    opacity: 1;
+}
+
+.meme-img:hover {
+    opacity: 0.5;
+}
+
+.deleteBtn {
+    width: 500px;
+    height: 250px;
+    content: "Delete";
+    position: absolute;
+    top: 1%;
+    left: 1%;
+    font-weight: 300;
+    font-size: 1000%;
+    opacity: 0;
+}
+
+.deleteBtn:hover {
+    opacity: 1.0;
+}
+
+.text {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    width: 500px;
+    font-size: 250%;
+    line-height: 1.1em;
+    letter-spacing: 1.5px;
+    color: #fff;
+    text-shadow: #000 0px 0px 6px;
+    text-transform: uppercase;
+    overflow-wrap: break-word;
+    opacity: 1;
+}
+
+.text:hover {
+    opacity: 0.5;
+}
+
+.top {
+    position: absolute;
+    top: 0;
+    max-height: 50%;
+}
+
+.bottom {
+    position:absolute;
+    bottom: 0;
+    max-height: 50%;
+}
